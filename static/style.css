@@ -1,0 +1,94 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 30px;
+    color: #00ffc8;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 3rem;
+}
+
+select, .text-input, button {
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: none;
+}
+
+select, .text-input {
+    width: 250px;
+}
+
+button {
+    background-color: #00ffc8;
+    color: #000;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #00ccaa;
+}
+
+.recommendations {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.movie-card {
+    width: 200px;
+    background-color: #111;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 0 10px #00ffc8;
+    padding-bottom: 10px;
+}
+
+.movie-card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid #00ffc8;
+}
+
+.movie-card p {
+    margin: 10px 0 0;
+    color: #fff;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .movie-card {
+        width: 45%;
+    }
+}
+
+@media (max-width: 480px) {
+    .movie-card {
+        width: 90%;
+    }
+
+    form {
+        flex-direction: column;
+    }
+}
